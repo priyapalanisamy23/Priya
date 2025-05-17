@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>American Flag</title>
+    <style>
+        .flag {
+            width: 380px;
+            height: 200px;
+            background-color: white;
+            border: 2px solid black;
+            position: relative;
+        }
+
+        .stripe {
+            width: 100%;
+            height: 15.4px;
+            background-color: red;
+            position: absolute;
+        }
+
+        .blue-square {
+            width: 152px;
+            height: 107.8px;
+            background-color: blue;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .star {
+            color: white;
+            font-size: 12px;
+            position: absolute;
+        }
+
+        /* Positioning stripes */
+        .stripe:nth-child(1) { top: 0; }
+        .stripe:nth-child(2) { top: 30.8px; }
+        .stripe:nth-child(3) { top: 61.6px; }
+        .stripe:nth-child(4) { top: 92.4px; }
+        .stripe:nth-child(5) { top: 123.2px; }
+        .stripe:nth-child(6) { top: 154px; }
+        .stripe:nth-child(7) { top: 184.8px; }
+
+        /* Positioning stars */
+        .star:nth-child(1) { top: 10px; left: 10px; }
+        .star:nth-child(2) { top: 10px; left: 40px; }
+        .star:nth-child(3) { top: 10px; left: 70px; }
+        .star:nth-child(4) { top: 30px; left: 25px; }
+        .star:nth-child(5) { top: 30px; left: 55px; }
+        .star:nth-child(6) { top: 50px; left: 10px; }
+        .star:nth-child(7) { top: 50px; left: 40px; }
+        .star:nth-child(8) { top: 50px; left: 70px; }
+    </style>
+</head>
+<body>
+    <div class="flag">
+        <div class="blue-square">
+            <span class="star">*</span>
+            <span class="star">*</span>
+            <span class="star">*</span>
+            <span class="star">*</span>
+            <span class="star">*</span>
+            <span class="star">*</span>
+            <span class="star">*</span>
+            <span class="star">*</span>
+        </div>
+        <div class="stripe"></div>
+        <div class="stripe"></div>
+        <div class="stripe"></div>
+        <div class="stripe"></div>
+        <div class="stripe"></div>
+        <div class="stripe"></div>
+        <div class="stripe"></div>
+    </div>
+</body>
+</html>
